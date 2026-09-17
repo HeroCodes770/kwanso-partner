@@ -23,8 +23,8 @@ Default dev server: http://localhost:5173
 
 ## Deploy
 
-Coolify app: `kwanso-partner-portal` → https://partner.kwansorides.com  
-Repo: https://github.com/HeroCodes770/kwanso-partner (`momills/kwanso-partner` is the existing Flutter app)
+Coolify app: `kwanso-partner-web` → https://partner.kwansorides.com  
+Repo: https://github.com/momills/kwanso-partner-web
 
 DNS: in Cloudflare for `kwansorides.com`, add a proxied **CNAME** (or A) for `partner` matching `admin` / `api`, then wait for TLS on Coolify.
 
