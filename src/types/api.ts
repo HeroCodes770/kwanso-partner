@@ -16,6 +16,9 @@ export type PartnerStats = {
   available_balance: number
   net_earnings?: number
   shuttle_count?: number
+  vehicle_count?: number
+  total_km?: number
+  total_revenue?: number
   total_bookings?: number
 }
 

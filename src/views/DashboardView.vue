@@ -44,7 +44,7 @@ function formatKm(km: number) {
         </CardHeader>
         <CardContent>
           <p class="text-3xl font-bold">{{ formatKm(partner.totalKm) }}</p>
-          <p class="text-xs text-muted-foreground">Fleet distance (when reported by API)</p>
+          <p class="text-xs text-muted-foreground">Completed-trip route distance</p>
         </CardContent>
       </Card>
       <Card>
