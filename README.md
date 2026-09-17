@@ -21,14 +21,11 @@ Default dev server: http://localhost:5173
 - `npm run preview` — serve `dist/`
 - `npm run test` — Vitest unit tests
 
-## Docker
+## Deploy
 
-Build with API/Supabase args baked into the bundle:
+Coolify app: `kwanso-partner-portal` → https://partner.kwansorides.com  
+Repo: https://github.com/HeroCodes770/kwanso-partner (`momills/kwanso-partner` is the existing Flutter app)
 
-```bash
-docker build \
-  --build-arg VITE_API_BASE_URL=https://api.example.com/api/v1 \
-  --build-arg VITE_SUPABASE_URL=https://xxx.supabase.co \
-  --build-arg VITE_SUPABASE_ANON_KEY=eyJ... \
-  -t kwanso-partner .
-```
+DNS: in Cloudflare for `kwansorides.com`, add a proxied **CNAME** (or A) for `partner` matching `admin` / `api`, then wait for TLS on Coolify.
+
+Build-time env on Coolify: `VITE_API_BASE_URL`, `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`.
